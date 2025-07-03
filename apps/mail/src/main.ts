@@ -9,7 +9,7 @@ async function  bootstrap(){
         transport: Transport.KAFKA,
         options: {
             client: {
-                brokers: ["localhost:9092"],
+                brokers: [process.env.BROKER || 'localhost:9092'],
                 clientId: "mail-service",
             },
             consumer: {
