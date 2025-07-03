@@ -17,7 +17,7 @@ async function bootstrap() {
     },
   });
   await app.startAllMicroservices();
-  await app.listen(process.env.PORT || 3000);
+  await app.listen(process.env.PORT || 3002);
   console.log('🚀 Auth API HTTP rodando na porta', process.env.PORT);
 }
 bootstrap();
